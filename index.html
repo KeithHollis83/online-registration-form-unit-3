@@ -25,9 +25,9 @@
 							<fieldset id="user_info">
 								<legend>Contact Information</legend>
 									<label for="name">Full Name:</label>
-									<input type="text" id="name" name="full_name" required>
+									<input type="text" id="name" name="full_name" required placeholder="required">
 									<label for="email">Email Address:</label>
-									<input type="email" id="email" name="user_mail" required>
+									<input type="email" id="email" name="user_mail" required placeholder="required">
 									<label for="number">Phone Number:</label>
 									<input type="tel" id="number" name="phone_number">
 									<label for="address">Street Adress:</label>
@@ -50,33 +50,31 @@
 									<legend>Newsletter</legend>
 									<p>Select the newsletters you would like ot receive</p>
 									
-									<input type="checkbox" id="html_news" name="html_news">
+									<input type="checkbox" id="html_news" name="html_news" value="html_news">
 									<label for="html_news">HTML News</label><br>
 									
-									<input type="checkbox" id="css_news" name="css_news">
+									<input type="checkbox" id="css_news" name="css_news" value="css_news">
 									<label for="html_news">CSS News</label><br>
 									
-									<input type="checkbox" id="js_news" name="js_news">
+									<input type="checkbox" id="js_news" name="js_news" value="js_news">
 									<label for="js">Javascript</label><br>
 									
 										<p class="">Newsletter Format</p>
-										<input type="radio" id="html" name="html_format">
+										<input type="radio" id="html" name="html_format" value="html_format">
 									 <label for="html">HTML</label><br>
 									
 									 
-									 <input type="radio" id="plain" name="plain_text">
+									 <input type="radio" id="plain" name="plain_text" value="plain_text">
 									 <label for="plain">Plain text</label><br>
 									 
 									 <label for="comments">Other topics you would like to hear about</label>
 									 <textarea name="user_comments" id="comments"></textarea>
 									
 							</fieldset>
+							<button type="button" name="submit_btn">Sign Up</button>
 					</form>
-					<button type="button">Sign Up</button>
 			</main>
 			
-			
-		
 			<footer>
 					<p>Copyright The Code Review</p>
 			</footer>

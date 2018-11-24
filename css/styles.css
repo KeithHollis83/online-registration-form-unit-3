@@ -49,14 +49,22 @@ input, select, textarea{
 	border-radius: 4px;
 	background-color: #ecf0f1;
 	border: none;
+	padding: 5px;
 }
 
-input:focus {
-	border: 1px solid #2ecc71;
+input:focus,
+select:focus{
+	outline: 1px solid #2ecc71;
 }
 
 input#zipcode {
 	width: 40%;
+}
+
+input[placeholder="required"] {
+	text-align: right;
+	font-style: italic;
+	
 }
 
 
@@ -90,8 +98,8 @@ label #comments {
 }
 
 button {
-	width: 100%;
-padding: 15px;
+	width:355px;
+ padding: 15px;
 	background-color: #1abc9c;
 	color: white;
 	font-size: 1em;
@@ -112,4 +120,5 @@ button:hover {
 footer {
 	text-align: center;
 	padding: 40px;
+	font-style: italic;
 }
