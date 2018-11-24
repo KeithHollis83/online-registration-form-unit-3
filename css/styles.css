@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Noto Sans', sans-serif;
 	color: #7f8c8d;
@@ -15,8 +19,6 @@ header {
 
 main {
 	padding: 20px;
-	border-top: 2px solid #34495e;
-	margin-top: 6px;
 }
 
 .site-info {
@@ -32,9 +34,14 @@ main {
 		color: #34495e;
 }
 
+form {
+	border-top: 2px solid  #34495e;
+	margin-top:5px;
+}
+
 legend {
 	font-size: 1.25em;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 25px;
 	color: #34495e;
 	font-weight: 700;
@@ -98,7 +105,7 @@ label #comments {
 }
 
 button {
-	width:355px;
+	width:100%;
  padding: 15px;
 	background-color: #1abc9c;
 	color: white;
@@ -114,11 +121,24 @@ button:hover {
 }
 	
 
-
-
-
 footer {
 	text-align: center;
 	padding: 40px;
 	font-style: italic;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+	
+	main {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	input, select {
+		width: 70%;
+	}
+	
 }
